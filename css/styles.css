@@ -150,6 +150,7 @@ img{
 .navigation-link,
 .address-link{
     display: flex;
+    position: relative;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -190,6 +191,9 @@ img{
 
 .current::after{
     content: "";
+    position: absolute;
+    bottom:-1px;
+    left:0;
     display: block;
 
     width: 100%;
@@ -531,6 +535,7 @@ img{
 
 .footer .social-list-icon{
     fill: #FFFFFF;
+
 }
 
 .footer .social-list-link:hover,
@@ -668,6 +673,8 @@ img{
     margin-left: var(--portfolio-set-gap);
     margin-top: var(--portfolio-set-gap);
     cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover,
